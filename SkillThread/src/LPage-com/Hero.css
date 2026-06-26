@@ -1,0 +1,189 @@
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:80px 8%;
+    background:linear-gradient(to right,#faf7fd,#ffffff);
+}
+
+.hero-left{
+    flex:1;
+}
+
+.badge{
+    background:#f4e6fa;
+    color:#9c27b0;
+    padding:10px 18px;
+    border-radius:30px;
+    display:inline-block;
+    font-weight:600;
+    margin-bottom:25px;
+}
+
+.hero-left h1{
+    font-size:4rem;
+    line-height:1.2;
+    color:#2c1b47;
+    margin-bottom:25px;
+}
+
+.hero-left h1 span{
+    color:#9c27b0;
+}
+
+.hero-left p{
+    color:#666;
+    line-height:1.8;
+    width:85%;
+    font-size:18px;
+}
+
+.hero-buttons{
+    margin-top:40px;
+    display:flex;
+    gap:20px;
+}
+
+.primary-btn{
+    padding:16px 34px;
+    background:#9c27b0;
+    color:white;
+    border:none;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:17px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.primary-btn:hover{
+    transform:translateY(-4px);
+    box-shadow:0 15px 35px rgba(156,39,176,.3);
+}
+
+.secondary-btn{
+    padding:16px 34px;
+    border:2px solid #9c27b0;
+    background:white;
+    color:#9c27b0;
+    border-radius:12px;
+    cursor:pointer;
+    font-size:17px;
+    font-weight:600;
+}
+
+.hero-stats{
+    display:flex;
+    gap:60px;
+    margin-top:70px;
+}
+
+.hero-stats h2{
+    color:#9c27b0;
+    font-size:32px;
+}
+
+.hero-stats p{
+    width:auto;
+}
+
+.hero-right{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+.circle{
+    width:500px;
+    height:500px;
+    background:linear-gradient(135deg,#c471ed,#f64f59);
+    border-radius:50%;
+    opacity:.12;
+    position:absolute;
+}
+
+.hero-image{
+    width:450px;
+    z-index:5;
+}
+
+.card{
+    position:absolute;
+    background:white;
+    padding:16px 24px;
+    border-radius:15px;
+    box-shadow:0 15px 40px rgba(0,0,0,.1);
+    font-weight:600;
+    animation:float 3s infinite ease-in-out;
+}
+
+.card1{
+    top:15%;
+    left:5%;
+}
+
+.card2{
+    top:60%;
+    right:0;
+}
+
+.card3{
+    bottom:8%;
+    left:18%;
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-15px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+@media(max-width:992px){
+
+.hero{
+
+flex-direction:column;
+text-align:center;
+padding-top:40px;
+
+}
+
+.hero-left p{
+width:100%;
+}
+
+.hero-buttons{
+justify-content:center;
+}
+
+.hero-stats{
+justify-content:center;
+}
+
+.hero-right{
+margin-top:60px;
+}
+
+.hero-image{
+width:320px;
+}
+
+.circle{
+width:350px;
+height:350px;
+}
+
+}

@@ -1,0 +1,63 @@
+.logo{
+    font-size:42px;
+    font-weight:700;
+    color:#a12fd3;
+    text-align:center;
+}
+
+.subtitle{
+    margin-top:8px;
+    color:#777;
+    text-align:center;
+}
+
+.progress{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:30px;
+}
+
+.step{
+    width:32px;
+    height:32px;
+    border-radius:50%;
+    border:2px solid #ddb9ef;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#fff;
+    color:#a12fd3;
+    font-weight:600;
+    font-size:14px;
+}
+
+.current{
+    border:2px solid #a12fd3;
+}
+
+.completed{
+    background:#a12fd3;
+    border:none;
+    color:#fff;
+}
+
+.line{
+    width:60px;
+    height:2px;
+    background:#eadcf4;
+}
+
+.line.active{
+    background:#a12fd3;
+}
+
+.progress-title{
+    text-align:center;
+    margin-top:15px;
+    margin-bottom:35px;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:2px;
+    color:#a12fd3;
+}
