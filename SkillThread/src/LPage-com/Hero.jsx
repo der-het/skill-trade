@@ -1,3 +1,5 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import "./Hero.css";
 
 function Hero() {
@@ -18,7 +20,9 @@ function Hero() {
         </p>
 
         <div className="hero-buttons">
-          <button className="primary-btn">Get Started</button>
+          <Link to="/Register">
+            <button className="primary-btn">Register</button>
+          </Link>
 
           <button className="secondary-btn">Browse Skills</button>
         </div>
