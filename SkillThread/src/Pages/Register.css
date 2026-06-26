@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f8f4fc;
+}
+
+.register-page{
+    min-height:100vh;
+    padding:30px;
+}
+
+/* Navbar */
+
+.top-navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:700;
+    color:#7B2FF7;
+}
+
+.logo span{
+    color:#9D4EDD;
+}
+
+.login-link{
+    color:#666;
+}
+
+.login-link a{
+    color:#7B2FF7;
+    text-decoration:none;
+    font-weight:600;
+}
+
+/* Card */
+
+.register-card{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:45% 55%;
+    background:#fff;
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+/* Left */
+
+.left-panel{
+    background:linear-gradient(135deg,#fde8ff,#f3e3ff);
+    padding:50px;
+}
+
+.left-panel h1{
+    font-size:42px;
+    color:#2b2140;
+    line-height:1.2;
+}
+
+.left-panel p{
+    margin:20px 0 35px;
+    color:#666;
+    line-height:1.7;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:18px;
+}
+
+.joined-users{
+    display:flex;
+    align-items:center;
+    margin-top:30px;
+}
+
+.avatars{
+    display:flex;
+}
+
+.avatars img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    border:3px solid #fff;
+    margin-left:-10px;
+}
+
+.avatars img:first-child{
+    margin-left:0;
+}
+
+.joined-users span{
+    margin-left:15px;
+    font-size:14px;
+    color:#555;
+}
+
+/* Right */
+
+.right-panel{
+    padding:45px;
+}
+
+.right-panel h2{
+    font-size:34px;
+    color:#2d2142;
+}
+
+.right-panel p{
+    color:#777;
+    margin:8px 0 30px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:500;
+}
+
+.input-box{
+    height:52px;
+    display:flex;
+    align-items:center;
+    border:1px solid #ddd;
+    border-radius:12px;
+    padding:0 15px;
+    margin-bottom:18px;
+    transition:.3s;
+}
+
+.input-box:hover,
+.input-box:focus-within{
+    border-color:#7B2FF7;
+}
+
+.input-box svg{
+    color:#999;
+}
+
+.input-box input{
+    flex:1;
+    border:none;
+    outline:none;
+    margin-left:10px;
+    font-size:15px;
+    background:transparent;
+}
+
+.password-row{
+    display:flex;
+    gap:15px;
+}
+
+.password-column{
+    flex:1;
+}
+
+.eye-btn{
+    background:none;
+    border:none;
+    cursor:pointer;
+    color:#777;
+}
+
+/* Checkbox */
+
+.checkbox{
+    display:flex;
+    gap:10px;
+    margin:18px 0 25px;
+    font-size:14px;
+}
+
+.checkbox a{
+    color:#7B2FF7;
+    text-decoration:none;
+}
+
+/* Button */
+
+.register-btn{
+    width:100%;
+    height:54px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(90deg,#5B4BFF,#8B3DFF);
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.register-btn:hover{
+    transform:translateY(-2px);
+}
+
+/* Divider */
+
+.divider{
+    text-align:center;
+    color:#999;
+    margin:25px 0;
+    font-size:13px;
+}
+
+/* Social */
+
+.social-buttons{
+    display:flex;
+    gap:15px;
+}
+
+.social-buttons button{
+    flex:1;
+    height:48px;
+    border:1px solid #ddd;
+    background:#fff;
+    border-radius:12px;
+    cursor:pointer;
+    font-weight:500;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+}
+
+.social-buttons button:hover{
+    border-color:#7B2FF7;
+}
+
+/* Footer */
+
+.footer{
+    margin-top:35px;
+    display:flex;
+    justify-content:space-between;
+    font-size:13px;
+    color:#888;
+}
+
+.footer div{
+    display:flex;
+    gap:15px;
+}
+
+.footer a{
+    text-decoration:none;
+    color:#888;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.register-card{
+    grid-template-columns:1fr;
+}
+
+.left-panel{
+    display:none;
+}
+
+.right-panel{
+    padding:30px;
+}
+
+}
+
+@media(max-width:600px){
+
+.register-page{
+    padding:15px;
+}
+
+.password-row{
+    flex-direction:column;
+}
+
+.social-buttons{
+    flex-direction:column;
+}
+
+.footer{
+    flex-direction:column;
+    gap:15px;
+    text-align:center;
+}
+
+.top-navbar{
+    flex-direction:column;
+    gap:10px;
+}
+
+}

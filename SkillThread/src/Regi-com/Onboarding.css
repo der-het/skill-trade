@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f7f4fb;
+}
+
+/* Main Page */
+
+.onboarding-page{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    padding:40px 20px;
+}
+
+/* Back Button */
+
+.top-back{
+    position:absolute;
+    top:30px;
+    left:40px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    cursor:pointer;
+    color:#a12fd3;
+    font-size:16px;
+    font-weight:500;
+}
+
+.top-back svg{
+    font-size:15px;
+}
+
+/* Logo */
+
+.logo{
+    font-size:42px;
+    font-weight:700;
+    color:#a12fd3;
+}
+
+.subtitle{
+    margin-top:6px;
+    color:#777;
+    font-size:15px;
+}
+
+/* Progress */
+
+.progress{
+    display:flex;
+    align-items:center;
+    margin-top:30px;
+}
+
+.step{
+    width:32px;
+    height:32px;
+    border-radius:50%;
+    border:2px solid #d9b9ea;
+    background:#fff;
+    color:#b55bd9;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:14px;
+    font-weight:600;
+}
+
+.step.active{
+    background:#a12fd3;
+    color:#fff;
+    border:none;
+}
+
+.line{
+    width:60px;
+    height:2px;
+    background:#e7d5f3;
+}
+
+.progress-text{
+    margin-top:15px;
+    margin-bottom:35px;
+    color:#a12fd3;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:2px;
+}
+
+/* Card */
+
+.card{
+    width:700px;
+    background:#fff;
+    border-radius:18px;
+    padding:45px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+/* Upload */
+
+.profile-upload{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.upload-circle{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    background:#faedff;
+    border:2px dashed #d8a6eb;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#a12fd3;
+    font-size:28px;
+    position:relative;
+}
+
+.edit-icon{
+    position:absolute;
+    bottom:2px;
+    right:2px;
+    width:28px;
+    height:28px;
+    border-radius:50%;
+    background:#a12fd3;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:12px;
+}
+
+.profile-upload p{
+    margin-top:12px;
+    color:#888;
+    font-size:14px;
+}
+
+/* Inputs */
+
+.input-group{
+    margin-bottom:22px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:8px;
+    color:#555;
+    font-size:14px;
+    font-weight:600;
+}
+
+textarea{
+    width:100%;
+    height:110px;
+    border:2px solid #ecd8f6;
+    border-radius:10px;
+    padding:15px;
+    resize:none;
+    outline:none;
+    font-size:15px;
+}
+
+.input-icon{
+    display:flex;
+    align-items:center;
+    border:2px solid #ecd8f6;
+    border-radius:10px;
+    padding:0 15px;
+}
+
+.input-icon svg{
+    color:#999;
+}
+
+.input-icon input{
+    width:100%;
+    padding:15px 10px;
+    border:none;
+    outline:none;
+    font-size:15px;
+    background:none;
+}
+
+/* Button */
+
+.button-area{
+    display:flex;
+    justify-content:flex-end;
+    margin-top:30px;
+}
+
+.next-btn{
+    background:#a12fd3;
+    color:#fff;
+    border:none;
+    border-radius:10px;
+    padding:14px 28px;
+    font-size:15px;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    cursor:pointer;
+    box-shadow:0 6px 18px rgba(161,47,211,.25);
+}
+
+/* Login */
+
+.login{
+    margin-top:25px;
+    color:#777;
+    font-size:14px;
+}
+
+.login span{
+    color:#a12fd3;
+    font-weight:600;
+    cursor:pointer;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.card{
+    width:100%;
+    padding:25px;
+}
+
+.logo{
+    font-size:34px;
+}
+
+.subtitle{
+    text-align:center;
+}
+
+.line{
+    width:35px;
+}
+
+.top-back{
+    left:20px;
+    top:20px;
+}
+
+.progress-text{
+    font-size:12px;
+}
+
+.button-area{
+    justify-content:center;
+}
+
+.next-btn{
+    width:100%;
+    justify-content:center;
+}
+
+}

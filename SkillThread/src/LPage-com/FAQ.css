@@ -1,0 +1,135 @@
+.faq {
+    padding: 90px 8%;
+    background: #f8fafc;
+}
+
+.faq-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.faq-heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.faq-heading span {
+    display: inline-block;
+    background: #eef2ff;
+    color: #4f46e5;
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.faq-heading h2 {
+    margin-top: 18px;
+    font-size: 42px;
+    color: #111827;
+    font-weight: 700;
+}
+
+.faq-heading p {
+    margin-top: 15px;
+    color: #6b7280;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.faq-item {
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+    transition: .35s ease;
+    box-shadow: 0 8px 25px rgba(0,0,0,.05);
+}
+
+.faq-item.active {
+    border-color: #6366f1;
+    box-shadow: 0 18px 40px rgba(99,102,241,.15);
+}
+
+.faq-question {
+    width: 100%;
+    padding: 25px 30px;
+    background: transparent;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    color: #111827;
+}
+
+.icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #eef2ff;
+    color: #4f46e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    transition: .3s;
+}
+
+.faq-item.active .icon {
+    background: #4f46e5;
+    color: white;
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: all .4s ease;
+}
+
+.faq-answer.show {
+    max-height: 250px;
+}
+
+.faq-answer p {
+    padding: 0 30px 28px;
+    color: #6b7280;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+@media(max-width:768px){
+
+.faq{
+    padding:70px 20px;
+}
+
+.faq-heading h2{
+    font-size:32px;
+}
+
+.faq-question{
+    font-size:17px;
+    padding:20px;
+}
+
+.faq-answer p{
+    padding:0 20px 20px;
+}
+
+.icon{
+    width:36px;
+    height:36px;
+    font-size:22px;
+}
+
+}
